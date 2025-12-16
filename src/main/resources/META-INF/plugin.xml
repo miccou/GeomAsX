@@ -24,5 +24,15 @@
     <!-- Extensions defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
+        <!-- Settings/Preferences Panel -->
+        <applicationConfigurable
+                parentId="tools"
+                instance="com.github.miccou.geomasx.settings.GeomAsXConfigurable"
+                id="com.github.miccou.geomasx.settings.GeomAsXConfigurable"
+                displayName="GeomAsX"/>
+
+        <!-- Persistent State Service -->
+        <applicationService
+                serviceImplementation="com.github.miccou.geomasx.settings.GeomAsXSettings"/>
     </extensions>
 </idea-plugin>
