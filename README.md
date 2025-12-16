@@ -1,9 +1,16 @@
-# IntelliJ Platform Plugin Template
+# GeomAsX
 
-[![Twitter Follow](https://img.shields.io/badge/follow-%40JBPlatform-1DA1F2?logo=twitter)](https://twitter.com/JBPlatform)
-[![Developers Forum](https://img.shields.io/badge/JetBrains%20Platform-Join-blue)][jb:forum]
+GeomAsX is a plugin for PyCharm 2025.3+ which allows user configuration of the format for geometry columns in the built-in query results panel.
 
-## Plugin template structure
+Supported output formats:
+- WKB
+- Extended WKB
+- WKT
+- Extended WKT
+
+## IntelliJ Platform Plugin Template original readme
+
+### Plugin template structure
 
 A generated project contains the following content structure:
 
@@ -32,7 +39,7 @@ and the manifest for our plugin – [plugin.xml][file:plugin.xml].
 > [!NOTE]
 > To use Java in your plugin, create the `/src/main/java` directory.
 
-## Plugin configuration file
+### Plugin configuration file
 
 The plugin configuration file is a [plugin.xml][file:plugin.xml] file located in the `src/main/resources/META-INF`
 directory.
@@ -57,7 +64,7 @@ configurations* that expose corresponding Gradle tasks:
 > [!NOTE]
 > You can find the logs from the running task in the `idea.log` tab.
 
-## Publishing the plugin
+### Publishing the plugin
 
 > [!TIP]
 > Make sure to follow all guidelines listed in [Publishing a Plugin][docs:publishing] to follow all recommended and
@@ -70,7 +77,7 @@ the [intellij-platform-gradle-plugin][gh:intellij-platform-gradle-plugin-docs].
 You can also upload the plugin to the [JetBrains Plugin Repository](https://plugins.jetbrains.com/plugin/upload)
 manually via UI.
 
-## Useful links
+### Useful links
 
 - [IntelliJ Platform SDK Plugin SDK][docs]
 - [IntelliJ Platform Gradle Plugin Documentation][gh:intellij-platform-gradle-plugin-docs]
